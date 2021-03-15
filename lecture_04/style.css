@@ -1,0 +1,16 @@
+* {
+    font-weight: 500;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, aqua, pink);
+    font-style: italic;
+    color: green;
+}
+
+body {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
