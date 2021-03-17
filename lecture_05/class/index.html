@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal and Inline CSS</title>
+    <style>
+        * {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            color: Aqua;
+            border-radius: 5px;
+            box-shadow: cyan 2px;
+            border-color: darkblue;
+        }
+        
+        p {
+            text-align: justify;
+            text-transform: capitalize;
+            font-family: fantasy;
+            font-weight: 700;
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        button {
+            background-color: darkorange;
+        }
+        
+        #tab {
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: wheat;
+        }
+        
+        #siam {
+            height: 100px;
+            width: 400px;
+            background-color: rgb(255, 0, 98);
+        }
+        
+        #siam1 {
+            height: 100px;
+            width: 400px;
+            background-color: rgb(0, 255, 106);
+        }
+        
+        #siam2 {
+            height: 100px;
+            width: 400px;
+            background-color: rgb(89, 0, 255);
+        }
+        
+        #siam3 {
+            height: 100px;
+            width: 400px;
+            background-color: rgb(255, 102, 0);
+        }
+        
+        #tab1,
+        #tab2,
+        #tab3,
+        #tab4 {
+            height: 100px;
+            width: 400px;
+            border: 2px solid black;
+        }
+        
+        #foo {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Inline CSS is more specified than External and internal-->
+    <h1 style="font-size: 50px; text-transform: uppercase; color: chartreuse; font-weight: 100;">Introduction</h1>
+    <p>Hello, my name is Siam. I am learning Web Design From Creative IT</p>
+    <button>Facebook</button>
+    <br>
+    <br>
+    <form action="">
+        <input type="number" placeholder="Type" id="foo">
+        <table align="center" cellpadding="0px" cellspacing="0px" id="tab">
+            <tr>
+                <td id="siam">
+                    <table cellpadding="0px" cellspacing="0px" id="tab1">
+                        <tr>
+                            <td height="100px" width="150px"><button>1</button></td>
+                            <td height="100px" width="50px"><button>2</button></td>
+                            <td height="100px" width="200px"><button>3</button></td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+            <tr>
+                <td id="siam1">
+                    <table cellpadding="0px" cellspacing="0px" id="tab2">
+                        <tr>
+                            <td height="100px" width="150px"><button>4</button></td>
+                            <td height="100px" width="50px"><button>5</button></td>
+                            <td height="100px" width="200px"><button>6</button></td>
+                        </tr>
+                    </table>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td id="siam2">
+                    <table cellpadding="0px" cellspacing="0px" id="tab3">
+                        <tr>
+                            <td height="100px" width="150px"><button>7</button></td>
+                            <td height="100px" width="50px"><button>8</button></td>
+                            <td height="100px" width="200px"><button>9</button></td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+            <tr>
+                <td id="siam3">
+                    <table cellpadding="0px" cellspacing="0px" id="tab4">
+                        <tr>
+                            <td height="100px" width="150px"><button>0</button></td>
+                            <td height="100px" width="50px"><button>.</button></td>
+                            <td height="100px" width="200px"><button>%</button></td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
